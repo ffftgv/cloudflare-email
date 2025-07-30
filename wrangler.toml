@@ -1,6 +1,8 @@
-name = "worker-email"
+名字 = "worker-email"
 main = "src/main.ts"
-compatibility_date = "2023-05-18"
+compatibility_date = "2024-07-01"  # 使用更新的日期
+compatibility_flags = ["nodejs_compat"]  # 明确启用Node.js兼容模式
 
 [env.production]
-
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
