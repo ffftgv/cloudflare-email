@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20240716.0",
-    "itty-router": "^3.3.12",
+    "itty-router": "^4.0.0",  // 使用最新4.x版本
     "zod": "^3.23.8"
   },
   "devDependencies": {
