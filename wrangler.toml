@@ -1,4 +1,4 @@
-名字 = "worker-email"
+name = "worker-email"
 main = "src/main.ts"
 compatibility_date = "2024-07-01"
 compatibility_flags = ["nodejs_compat"]
