@@ -1,8 +1,18 @@
-name = "worker-email"
+名字 = "worker-email"
 main = "src/main.ts"
-compatibility_date = "2024-07-01"  # 使用更新的日期
-compatibility_flags = ["nodejs_compat"]  # 明确启用Node.js兼容模式
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 添加D1绑定
+[[d1_databases]]
+binding = "DB" # 这将在代码中作为env.DB使用
+database_name = "email-db"
+database_id = "your-database-id" # 通过wrangler d1 create命令获取
 
 [env.production]
 compatibility_date = "2024-07-01"
 compatibility_flags = ["nodejs_compat"]
+[[d1_databases]]
+binding = "DB"
+database_name = "email-db-production"
+database_id = "your-production-database-id"
