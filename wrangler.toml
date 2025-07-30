@@ -1,4 +1,4 @@
-名字 = "worker-email"
+name = "worker-email"
 main = "src/main.ts"
 compatibility_date = "2024-07-01"  # 使用更新的日期
 compatibility_flags = ["nodejs_compat"]  # 明确启用Node.js兼容模式
