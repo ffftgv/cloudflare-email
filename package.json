@@ -1,15 +1,19 @@
 {
   "name": "worker-email",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "deploy": "wrangler publish --env production",
-    "start": "wrangler dev"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
-  {
   "dependencies": {
     "@cloudflare/workers-types": "^4.20240716.0",
     "itty-router": "^3.3.12",
     "zod": "^3.23.8"
+    // 移除了 better-sqlite3
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "wrangler": "^3.0.0"
   }
 }
